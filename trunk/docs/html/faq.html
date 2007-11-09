@@ -1,0 +1,229 @@
+<!-- $Id: faq.html,v 1.3 2007/06/23 11:44:00 jon Exp $-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>MercuryBoard Help :: FAQ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type='text/css'>
+body    {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; cursor:default; margin:0px; padding:0px; background-color:#ffffff; background-image:url(bg.gif)}
+td      {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; line-height:115%}
+
+a       {color:#000000}
+a:hover {color:#ff6600}
+
+td.menu {color:#ffffff; font-weight:bold; font-size:14px; background-color:#ff9933}
+a.menu  {color:#000000; text-decoration:none; font-weight:bold; font-size:11px}
+a.menu:hover {color:#ffffff}
+
+hr      {height:1px; border:0px; border-top:1px dashed #999999}
+li      {line-height:130%}
+
+.large  {font-size:18px; font-weight:bold; display:block; width:95%; background-color:#eeeeee; border:1px dashed #999999; padding:5px}
+.medium {font-size:14px; font-weight:bold}
+.small  {font-size:10px}
+
+.justify {text-align:justify}
+</style>
+
+<script type='text/javascript'>
+<!--
+function arrow(x, y)
+{
+	if (document.getElementById) {
+		document.getElementById(x).style.visibility = y;
+	} else {
+		document.all[x].style.visibility = y;
+	}
+}
+//-->
+</script>
+</head>
+<body>
+<br/>
+<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' align='center' width='75%'>
+	<tr>
+		<td colspan='2' style='border:1px solid #cccccc; border-bottom:3px solid #cccccc'>
+			<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' width='100%'>
+				<tr>
+					<td class='menu' style='padding:5px' width='100%'><a href='/'><img src='logo.gif' alt='MercuryBoard' border='0'></a></td>
+
+					<td class='menu' align='right'><div id='about' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='about.html' class='menu' onmouseover='arrow("about", "visible")' onmouseout='arrow("about", "hidden")'>about</a></td>
+
+					<td class='menu' align='right'><div id='install' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='install.html' class='menu' onmouseover='arrow("install", "visible")' onmouseout='arrow("install", "hidden")'>installation</a></td>
+
+					<td class='menu' align='right'><div id='faq' style='visibility:visible'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='faq.html' class='menu' onmouseover='arrow("faq", "visible")' onmouseout='arrow("faq", "visible")'>FAQ</a></td>
+
+					<td class='menu' align='right'><div id='community' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com' target="_blank" class='menu' onmouseover='arrow("community", "visible")' onmouseout='arrow("community", "hidden")'>community</a></td>
+
+					<td class='menu' align='right'><div id='support' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com/index.php?a=forum&amp;f=6' target="_blank" class='menu' onmouseover='arrow("support", "visible")' onmouseout='arrow("support", "hidden")'>support</a></td>
+
+					<td class='menu' align='right'><div id='credits' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='credits.html' class='menu' onmouseover='arrow("credits", "visible")' onmouseout='arrow("credits", "hidden")'>credits</a></td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign='top' style='border:1px solid #cccccc; padding:10px' bgcolor='#ffffff'>
+
+<span class='large'>Frequently Asked Questions</span><br />
+<br />
+Here is a compiled list of question frequently asked in the support forum, these questions vary from help with installation
+to how to create a new skin. <br/><br/>
+<hr /><br />
+
+<span class='medium'>Most common questions</span><br /><br />
+
+<b>I can't post on the board I just created</b><br />
+You need to create a category AND a forum to be able to post. 
+You can do this through <i>Admin CP -> Create a Forum</i>.  Be sure to use default, full or 
+permissions from a group or forum already created. Otherwise you've created a forum fully locked down so even administrators cannot access it! <br/>
+<br/>
+
+<b>The board is blank or garbled</b><br />
+This could be because your server does not support GZip compression. You can turn
+this feature off by going into <i>Admin CP -> Edit Board Settings</i> and disable GZIP, you board
+should work as normal after this. <br /><br />
+
+<b>When people try and register they get a JpGraph error</b><br />
+This is because your web server does not have the required software to run anti-robot registration. Disable
+it through <i>Admin CP -> Edit Board Settings</i>, it is disabled by default.<br/><br/>
+
+<b>How do I set the board to email registration validation?</b><br/>
+Mercuryboard does not email newly registered users by default. You can turn it on in <i>Admin CP -> 
+Edit Board Settings -> Require users be validated by email</i>. This will send an email to newly registered 
+users with a link they must click before they become "active" members. Make sure your board email settings 
+are correct! <br/><br/>
+
+<b>The link it's emailing people is wrong. There's no domain name in it.</b><br/>
+You need to enter the site address in <i>Admin CP -> Edit Board Settings -> Location of Board</i>. This must be set
+ to the root of your domain address with no trailing slash. <i>http://mysite.com</i> is good. 
+ <i>http://mysite.com/~geoff/forum</i> is bad. <br/><br/>
+
+<b>I can't login to my forum anymore!</b><br/>
+Don't ban guests! It requires some very complicated SQL or editing PHP files to get back into your site! 
+All groups except "Banned" should have "Use MercuryBoard" ticked or else you are banning that group from 
+even login and logout!<br/><br/>
+
+<b>How do I use the Admin CP?</b><br/>
+MercuryBoard now has documentation on how to use the Admin CP, you can access this document by either
+going into the Admin CP and clicking on the help link at the top of the page, or <a href="admin_help.html">click here</a>.<br/>
+
+<br /><hr /><br />
+
+<span class='medium'>Advanced questions</span><br /><br />
+
+<b>Can I put PHP code inside a HTML template?</b><br/>
+You can get creative using the following syntax:<i>(but without the spaces after '<')</i><br/>
+< IF (php condition)>(html output)< /IF> <br/><br/>
+
+<b>How do I disable the subscribe option?</b><br/>
+You will need to edit the templates to remove the subscribe button. This isn't the best solution as 
+someone who knows the url to type in could still subscribe. But it is the easiest.<br/><br/>
+
+Go into <i>Admin CP -> Edit HTML Templates</i> and select the skin to edit.
+Then go to <i>Topics -> Topic View</i><br/>
+Remove the last 3 lines<br/>
+Save changes and continue to return to the templates list<br/><br/>
+
+Then go to <i>Forums -> Forum View</i>
+Look for<br/><br/>
+
+
+< p style='text-align:center'>
+  < br />< a href='{$this->self}?a=cp&amp;s=addsub&amp;... snipped off rest of line for IE users
+< /p><br/><br/>
+
+and remove that chunk. Save and you're done! This will not remove existing subscriptions. You'll need some database knowledge for that.<br/><br/>
+
+<b>I installed a new skin but now can't edit/delete the images for it. Why can't I edit files I created?</b><br/>
+It's all about permissions and ownership.<br/><br/>
+
+When you connect to the webserver through FTP you connect as a specific user (let's say halfling) and can create 
+files that belong to halfling. You have permission, through FTP to change permissions, rename, delete, replace, etc.<br/><br/>
+
+Now when the web server creates a file (such as installing a skin from an mbs) it creates them as belonging to the user 
+running webserver (nobody or a specific user like apache). That user can change permissions, rename, delete, replace, etc.
+(note: Yes there is a user called nobody)<br/><br/>
+
+The problem comes when these two don't overlap. Nobody creates a file that halfling can't delete. Or halfling creates a directory 
+that nobody can't write to. Why we change permissions of other files and directories (typically to 777 or 775) is so nobody has 
+access to write that file. Unfortunately the skin creation process doesn't (as yet) make the files so you can always FTP in to edit or delete them.<br/><br/>
+
+Solution? You can delete the skin through admincp. You can ask your web host administrator to change the ownership of the files. 
+You can create a script to change the owner/permissions of the files. Or you can download the files, create a script to delete them, 
+and then upload them as new.<br/><br/>
+
+Best and easiest is to talk to your hosting provider. They may fix things so it wont happen in the future.<br/><br/>
+
+<b>I want to change how the board looks. Where do I do this?</b><br/>
+Mercuryboard uses a skinning system that consists of templates, css and some graphics. You can find the css and graphics under the skins 
+directory. The html templates can be edited through the admin cp. You should not need to edit PHP files to change the boards appearance. Also there 
+are a lot of tricks you can do just in <a href="http://www.w3schools.com/css/css_reference.asp" target="_blank">CSS</a>. <br/>
+
+
+<br /><hr /><br />
+
+<span class='medium'>Project questions</span><br /><br />
+
+<b>How can I join the Mercury Team?</b><br/>
+The team itself is not currently looking for any new members, however, the project runs on what other
+people apart from the team contribute, so if you have a good feature then it might get added to a release.<br/><br/>
+
+<b>Can I edit the source code?</b><br/>
+Yes, 'Modding' the board is encouraged by the Mercury team so others can realize the power behind the 
+project as well as post 'Mods' in the showcase forum of the main site. This allows others to use your
+Mods if you wish and is also a catalogue of what others have done, so take a look! Please take a look at 
+<a href="coding_standards.htm">MercuryBoard's coding standards</a> and the <a href="license.htm">GNU GPL License</a>.<br/>
+<br/>
+
+<b>What is the difference between MercuryBoard and QuickSilver Forums?</b><br/>
+QuickSilver Forums was built off MercuryBoard and is now a separate project, so MercuryBoard is like the father really!
+</td>
+		<td style='background-color:#fcfcfc; border:1px solid #cccccc; line-height:135%; padding:7px' width='25%' valign='top'>
+			<b>Need help with using the Admin CP?</b><br />
+			Now you can use the Admin CP help documentation containing all the basics that you
+			will need to know, to access this documentation go into your Admin CP and click 
+			<a href="admin_help.html" target="_blank">Admin CP Help</a> on the grey bar top right.<br/>
+			<br/>
+
+			<b>Still having a problem?</b><br />
+			If you have tried looking at the readme and the FAQ but you are still having problems,
+			try going to the official MercuryBoard support forum by clicking the <a href="http://forums.mercuryboard.com/index.php?a=forum&amp;f=6" target="_blank">
+			support</a> link at the top of this page.<br/>
+			<br/>
+
+			<b>Looking for a host?</b><br />
+			In order to use MercuryBoard you need to have a host, this is basically a server which is connected
+			to the World Wide Web so you can upload web pages to the internet. If you don't have a host then take a look <a href="http://forums.mercuryboard.com/index.php?a=topic&amp;t=3529" target="_blank">here</a>
+			for a list of ones that are <i>free</i><br/><br/>
+			
+			<b>Release Notes</b><br>
+			In every release of MercuryBoard there is a compiled list of new features, bug fixes, template changes etc.
+			These notes are made by the developers and can be found <a href="release.html" target="_blank">here</a><br/><br/>  
+
+			<b>Open Source</b><br />
+			&bull; Easy to customize<br />
+			&bull; Released under<br />
+
+			<span style='color:#fcfcfc'>&bull;</span> the GPL license<br />
+			&bull; Free for commercial<br />
+			<span style='color:#fcfcfc'>&bull;</span> or personal use<br /><br />
+
+			<a href='http://www.mysql.com' target='_blank'><img src='mysql.png' alt='MySQL' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br/>
+			<a href='http://www.php.net' target='_blank'><img src='php.gif' alt='PHP' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br /><br />
+			<a href='http://www.mercuryboard.com/index.php?a=donate' target="_blank"><img src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" alt="Make payments with PayPal - it's fast, free and secure!"></a><br/><br/><br/>
+			
+			<a href="http://validator.w3.org/check?uri=referer"><img style="border:0; margin-top:5px" src="valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><br />
+			<a href="http://jigsaw.w3.org/css-validator/"><img style="border:0; width:88px; height:31px; margin-top:5px" src="valid-css.png" alt="Valid CSS!"></a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

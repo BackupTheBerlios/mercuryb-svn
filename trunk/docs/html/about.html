@@ -1,0 +1,148 @@
+<!-- $Id: about.html,v 1.3 2007/06/23 11:43:59 jon Exp $-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>MercuryBoard Help :: About</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type='text/css'>
+body    {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; cursor:default; margin:0px; padding:0px; background-color:#ffffff; background-image:url(bg.gif)}
+td      {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; line-height:115%}
+
+a       {color:#000000}
+a:hover {color:#ff6600}
+
+td.menu {color:#ffffff; font-weight:bold; font-size:14px; background-color:#ff9933}
+a.menu  {color:#000000; text-decoration:none; font-weight:bold; font-size:11px}
+a.menu:hover {color:#ffffff}
+
+hr      {height:1px; border:0px; border-top:1px dashed #999999}
+li      {line-height:130%}
+
+.large  {font-size:18px; font-weight:bold; display:block; width:95%; background-color:#eeeeee; border:1px dashed #999999; padding:5px}
+.medium {font-size:14px; font-weight:bold}
+.small  {font-size:10px}
+
+.justify {text-align:justify}
+</style>
+
+<script type='text/javascript'>
+<!--
+function arrow(x, y)
+{
+	if (document.getElementById) {
+		document.getElementById(x).style.visibility = y;
+	} else {
+		document.all[x].style.visibility = y;
+	}
+}
+//-->
+</script>
+</head>
+<body>
+<br/>
+<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' align='center' width='75%'>
+	<tr>
+		<td colspan='2' style='border:1px solid #cccccc; border-bottom:3px solid #cccccc'>
+			<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' width='100%'>
+				<tr>
+					<td class='menu' style='padding:5px' width='100%'><a href='/'><img src='logo.gif' alt='MercuryBoard' border='0'></a></td>
+
+					<td class='menu' align='right'><div id='about' style='visibility:visible'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='about.html' class='menu' onmouseover='arrow("about", "visible")' onmouseout='arrow("about", "visible")'>about</a></td>
+
+					<td class='menu' align='right'><div id='install' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='install.html' class='menu' onmouseover='arrow("install", "visible")' onmouseout='arrow("install", "hidden")'>installation</a></td>
+
+					<td class='menu' align='right'><div id='faq' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='faq.html' class='menu' onmouseover='arrow("faq", "visible")' onmouseout='arrow("faq", "hidden")'>FAQ</a></td>
+
+					<td class='menu' align='right'><div id='community' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com' target="_blank" class='menu' onmouseover='arrow("community", "visible")' onmouseout='arrow("community", "hidden")'>community</a></td>
+
+					<td class='menu' align='right'><div id='support' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com/index.php?a=forum&amp;f=6' target="_blank" class='menu' onmouseover='arrow("support", "visible")' onmouseout='arrow("support", "hidden")'>support</a></td>
+
+					<td class='menu' align='right'><div id='credits' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='credits.html' class='menu' onmouseover='arrow("credits", "visible")' onmouseout='arrow("credits", "hidden")'>credits</a></td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign='top' style='border:1px solid #cccccc; padding:10px' bgcolor='#ffffff'>
+
+<span class='large'>About</span><br><br>
+
+<span class='medium'>From the Website</span><br /><br />
+
+<div class='justify'>MercuryBoard is a powerful message board system dedicated to raw speed with a mixture of features, ease of use, and ease of customization coupled with expandability, and diverse language services.  Now just over two years in the making, version 1.0.0 is an immensely stable, thoroughly tested, and well-written piece of internet software ready for any webserver, running on PHP versions as low as 4.0.0 and MySQL versions as low as 3.22.<br><br>
+
+The board was founded as a development project aimed at experimenting with the limitations and uses of the PHP language by Jason Warner and Mark Elliot.  Over the past two years it has undergone, minimally, three major rewrites, numerous full database restructures, and several changes.  The last year of development is clearly visible in an online CVS repository, and the software has been, and remains to be for all future development, open source, and free for you to use.<br><br>
+
+The success of the board speed wise comes from constant optimization of code.  The base structure of the application has been in place for almost six months now and has remained relatively unchanged.  Several modules plug-in to the software, making it both extensible, and easy to figure out.  The limits of PHP's OOP protocols has been tested with our software, and an even mixture of both Jason's and Mark's code-theory has been authored into the methodology of how the software works.  Admittedly, the software is not OOP in the 'true' sense of the theory, but uses several advantages of objects to facilitate an easy modified working base model.  The board is easy to modify, as shown by several users even in the Beta stages of the product.<br><br>
+
+Since August 2001, the board has been targetted at being scarce on features, but the standard features of any message board, and the typical requirements of any end-user have been carefully weighed.  A small - but easily expandable - messenger system has been included due to demand, as well as other common features like member lists, searching, help files, and personal control panels allowing customization of the look of the board by selection of skins, and translations of forum text into different languages by selection of languages.  While the featureset is robust, it is not obstrusive, and most anything can be removed by mere design change, as well as many features having the ability to be turned off.<br><br>
+
+First year development was slow but steady, involving several rewrites, and much time donated on the side of very important school years on the part of both Jason and Mark.  Jeremy "Mezz" Messenger has been kind enough to aid in many ways virtually since the start of the project.  Formed in the days of "ikonboard" the base featureset and model of what a discussion board should be was easily adapted by the then - and still - young developers.  David from the original ikonboard admin staff gave several pointers that led to vast speed and efficiency improvements.  Joining queries, in the first few weeks of development, turned out to be a major breakthrough.  MercuryBoard was one of the first boards to be developed that was featureful, fast, and using less than eight (constant) queries, beating phpBB and Ikonboard Perl to the table.  It remains one of the few immensely efficient, and super-speedy boards that are given away to the public.<br><br>
+
+Jason has led most of the second year's development, and pushed the project in many directions.  Mark remains an integral part of the development team, especially with development theory.  Help from Jay Little has been invaluable to the test and bug management of the board, and the constant support from Mezz has been a massive help the development process.<br><br>
+
+Monthly the board grows in features, speed, user friendliness.  As one of the few boards on the market that can claim that it can use alpha-skins with the current version, MercuryBoard has an immensely superior skinning engine.  The skinning engine remains virtually unchanged for the past year and a half, since its creation.  Using a database based storage method, the skins are extremely portable, and extremely flexible.  All MbCode and formatting is applied on-the-fly, and changes to MbCode tags are therefore completely retroactive as well as foreward looking.<br><br>
+
+Within the last months of development a very clever three-dimensional permissions system was implemented.  The system is expandable to do virtually anything at a developer's whim.  The module may even be included to extend your website, and with some simple modifications it can easily be ported to other applications.  Open source software welcomes you to credit and reuse anything you see on the board.<br><br>
+
+Development continues with a long plan after the release of 1.0.0.  The board still awaits some design edits, and a massive list of clever ideas waits to be implemented.  The team welcomes feature suggestions, and anyone who wishes to create a new design is welcome to submit it.  The MercuryBoard Team currently isn't looking for new members, but welcomes anyone who feels they can help out.  'Modding' the board to suit your needs is encouraged, and we welcome you to post any modifications in our development forums.  It's been a long time since the start of this project, and the journey continues.<br><br>
+
+Hop on and keep on truckin' with us - there's still lots to be seen, and lots of places to go.</div>
+<br /><hr /><br />
+
+<span class='medium'>Update</span><br /><br />
+
+TODO</td>
+
+
+
+	    <!-- Side panel -->
+	<td style='background-color:#fcfcfc; border:1px solid #cccccc; line-height:135%; padding:7px' width='25%' valign='top'>
+			<b>Need help with using the Admin CP?</b><br />
+			Now you can use the Admin CP help documentation containing all the basics that you
+			will need to know, to access this documentation go into your Admin CP and click 
+			<a href="admin_help.html" target="_blank">Admin CP Help</a> on the grey bar top right.<br/>
+			<br/>
+
+			<b>Still having a problem?</b><br />
+			If you have tried looking at the readme and the FAQ but you are still having problems,
+			try going to the official MercuryBoard support forum by clicking the <a href="http://forums.mercuryboard.com/index.php?a=forum&amp;f=6" target="_blank">
+			support</a> link at the top of this page.<br/>
+			<br/>
+
+			<b>Looking for a host?</b><br />
+			In order to use MercuryBoard you need to have a host, this is basically a server which is connected
+			to the World Wide Web so you can upload web pages to the internet. If you don't have a host then take a look <a href="http://forums.mercuryboard.com/index.php?a=topic&amp;t=3529" target="_blank">here</a>
+			for a list of ones that are <i>free</i><br/><br/> 
+			
+			<b>Release Notes</b><br>
+			In every release of MercuryBoard there is a compiled list of new features, bug fixes, template changes etc.
+			These notes are made by the developers and can be found <a href="release.html" target="_blank">here</a><br/><br/> 
+
+			<b>Open Source</b><br />
+			&bull; Easy to customize<br />
+			&bull; Released under<br />
+
+			<span style='color:#fcfcfc'>&bull;</span> the GPL license<br />
+			&bull; Free for commercial<br />
+			<span style='color:#fcfcfc'>&bull;</span> or personal use<br /><br />
+
+			<a href='http://www.mysql.com' target='_blank'><img src='mysql.png' alt='MySQL' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br/>
+			<a href='http://www.php.net' target='_blank'><img src='php.gif' alt='PHP' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br /><br />
+			<a href='http://www.mercuryboard.com/index.php?a=donate' target="_blank"><img src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" alt="Make payments with PayPal - it's fast, free and secure!"></a><br/><br/><br/>
+			
+			<a href="http://validator.w3.org/check?uri=referer"><img style="border:0; margin-top:5px" src="valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><br />
+			<a href="http://jigsaw.w3.org/css-validator/"><img style="border:0; width:88px; height:31px; margin-top:5px" src="valid-css.png" alt="Valid CSS!"></a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

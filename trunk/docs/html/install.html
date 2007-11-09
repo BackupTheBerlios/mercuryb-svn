@@ -1,0 +1,286 @@
+<!-- $Id: install.html,v 1.4 2007/06/23 11:44:00 jon Exp $ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>MercuryBoard Installation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type='text/css'>
+body    {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; cursor:default; margin:0px; padding:0px; background-color:#ffffff; background-image:url(bg.gif)}
+td      {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; line-height:115%}
+
+a       {color:#000000}
+a:hover {color:#ff6600}
+td.menu {color:#ffffff; font-weight:bold; font-size:14px; background-color:#ff9933}
+a.menu  {color:#000000; text-decoration:none; font-weight:bold; font-size:11px}
+a.menu:hover {color:#ffffff}
+
+hr      {height:1px; border:0px; border-top:1px dashed #999999}
+li      {line-height:130%}
+
+.large  {font-size:18px; font-weight:bold; display:block; width:95%; background-color:#eeeeee; border:1px dashed #999999; padding:5px}
+.medium {font-size:14px; font-weight:bold}
+.small  {font-size:10px}
+
+.justify {text-align:justify}
+</style>
+<script type='text/javascript'>
+<!--
+function arrow(x, y)
+{
+	if (document.getElementById) {
+		document.getElementById(x).style.visibility = y;
+	} else {
+		document.all[x].style.visibility = y;
+	}
+}
+//-->
+</script>
+</head>
+<body>
+<br/>
+<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' align='center' width='75%'>
+	<tr>
+		<td colspan='2' style='border:1px solid #cccccc; border-bottom:3px solid #cccccc'>
+			<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' width='100%'>
+				<tr>
+					<td class='menu' style='padding:5px' width='100%'><a href='/'><img src='logo.gif' alt='MercuryBoard' border='0'></a></td>
+
+					<td class='menu' align='right'><div id='about' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='about.html' class='menu' onmouseover='arrow("about", "visible")' onmouseout='arrow("about", "hidden")'>about</a></td>
+
+					<td class='menu' align='right'><div id='install' style='visibility:visible'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='install.html' class='menu' onmouseover='arrow("install", "visible")' onmouseout='arrow("install", "visible")'>installation</a></td>
+
+					<td class='menu' align='right'><div id='faq' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='faq.html' class='menu' onmouseover='arrow("faq", "visible")' onmouseout='arrow("faq", "hidden")'>FAQ</a></td>
+
+					<td class='menu' align='right'><div id='community' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com' target="_blank" class='menu' onmouseover='arrow("community", "visible")' onmouseout='arrow("community", "hidden")'>community</a></td>
+
+					<td class='menu' align='right'><div id='support' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com/index.php?a=forum&amp;f=6' target="_blank" class='menu' onmouseover='arrow("support", "visible")' onmouseout='arrow("support", "hidden")'>support</a></td>
+
+					<td class='menu' align='right'><div id='credits' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='credits.html' class='menu' onmouseover='arrow("credits", "visible")' onmouseout='arrow("credits", "hidden")'>credits</a></td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign='top' style='border:1px solid #cccccc; padding:10px' bgcolor='#ffffff'>
+
+<!-- Header -->
+
+<span class="large">MercuryBoard Installation</span><br><br>
+
+<!-- Begin Content -->
+
+  This easy-to-use guide will help guide you through the MercuryBoard installation process. Before you begin
+  please ensure your server meets the requirements on <a href="http://www.mercuryboard.com/index.php?a=downloads">this page</a>.
+  <br>
+  <br>
+  <strong>Table of Contents:</strong>
+  <ul>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#extracting">Extracting</a></li>
+    <li><a href="#ftp">FTP</a></li>
+    <li><a href="#chmod">CHMOD</a></li>
+    <li><a href="#installer">Installer</a></li>
+	<li><a href="#upgrading">Upgrading</a></li>
+  </ul>
+  <hr>
+  <br>
+
+<!-- Download Section -->
+
+  <span class="medium"><a name="download">Download</a></span><br><br>
+  The first step is to download the latest version of MercuryBoard.
+  <br><br>
+  <b>Which one do I choose?</b><br>
+     Windows Users - download the ZIP archive.<br>
+     *nix Users - download either the GZIP or BZIP archives. Make sure you have a program capable of extracting the archive.
+     <br><br>
+  <b>What is an 'archive'?</b><br>
+     An 'archive' is a file that contains files and maintains folder structure if necessary. At the time of this writing
+     (MB version 1.0.1), MercuryBoard uses 189 files within 17 different folders. Also, these archives compress the data
+     making downloads much smaller. For example, MercuryBoard 1.0.1 is 910kb uncompressed, while the ZIP archive only
+     takes 324kb.
+  <br><br>
+  Now that you have chosen an archive, go to <a href="http://www.mercuryboard.com/index.php?a=downloads">this</a> page and follow these directions:<br>
+    <i>Click the link >> Click Save >> Choose 'Desktop' from the drop-down menu >> Click Save</i>
+    <br><br>
+  <img src="1.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  <hr>
+
+<!-- Extracting Section -->
+
+  <br>
+  <span class="medium"><a name="extracting">Extracting</a></span><br><br>
+  <b>Windows Users</b><br>
+  After the archive has been downloaded, navigate to the directory it in which it was saved, or minimize all open windows
+  if you saved it to the desktop. Double click the archive. A new window should open displaying the contents of the archive.
+  Click and drag the contents to your desktop - this extracts all the files within the archive. You should now have a folder
+  called "mercuryboard-*.*.*" on your desktop.
+  <br><br>
+  <i>Note to Windows 95/98 users:</i> You will need to download a third-party Zip file extractor (if you don't
+  already have one). A very popular and simple-to-use program is <a href="http://www.winzip.com/" target="blank">WinZip</a>.
+  <br><br>
+  <img src="2.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  <hr>
+  <br>
+
+<!-- FTP Section -->
+
+  <br>
+  <span class="medium"><a name="ftp">FTP</a></span><br><br>
+  <b>What is FTP?</b><br>
+  FTP stand for <i>File Transfer Protocol</i>. It is preferred because it is a fast and efficient means of sending multiple
+  files to a server.<br><br>
+  <b>What program should I use?</b><br>
+  If you don't have one already, the MercuryBoard team recommends <a href="http://www.smartftp.com/" target="blank">SmartFTP</a>,
+  because of its many features in a small, convenient package.
+  <br><br>
+  After following the directions of your FTP program and connecting to your server, you must decide in which folder MercuryBoard
+  will reside. A common folder name is folder is 'forum' under the root directory - for instance if your server addres is
+  &quot;http://www.ilovemb.com/&quot;, your forum would be located here: &quot;http://www.ilovemb.com/forum/&quot;. The most
+  simple way to do this  is to rename the folder you extracted onto your desktop. Right-click the folder, click rename, and
+  enter your chosen folder name. It is recommended that you only include standard alphanumeric characters. In other words,
+  only letters and numbers, no spaces or other characters. This will ensure compatibility with every Server and Client OS and
+  browser.
+  <br><br>
+  <img src="3.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  The next step is the actual upload process. Resize the SmartFTP window so you can see both SmartFTP and the forum folder on
+  the desktop. Now, click and drag that folder into the file-list pane (as pictured below). This may take a little while, but
+  that is normal, especially if you are on a dialup connection. As soon as the transfers are done, you may move to the next
+  section. <b>Note: you will need this program open for the next section. Don't close it!</b>
+  <br><br>
+  <img src="4.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  <hr>
+  <br>
+
+<!-- CHMOD Section -->
+
+  <br>
+  <span class="medium"><a name="chmod">CHMOD</a><br>
+  This step is not necessary for Windows servers.</span><br><br>
+  <b>What is CHMOD?</b><br>
+  Many Windows users are not familiar with this term. CHMOD is a UNIX command that "changes or assigns the mode of a file"
+  according to the UNIX manual. In more personable terms, it set access levels for different users to read, write, and execute
+  the file(s). If you want to learn more, read the manual page
+  <a href="http://campuscgi.princeton.edu/man?chmod" target="blank">here</a>.
+  <br><br>
+  We must CHMOD these files and folder to value 755:
+  <ul>
+    <li>/settings.php</li>
+    <li>/install/index.php (this means the 'index.php' file within the 'install' folder)</li>
+    <li>/avatars/uploaded (this means the 'uploaded' folder within the 'avatars' folder)</li>
+  </ul>
+  To do this, go to your SmartFTP window (must be connected to the server) and navigate to the folder you just uploaded. Right
+  click the file 'settings.php' and select CHMOD. A window will pop up. Enter 755 into the permissions box and click 'OK'.
+  Repeat this process with the other file and folder listed above.
+  <br><br>
+  <img src="5.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  <hr>
+  <br>
+
+<!-- Installer Section -->
+
+  <br>
+  <span class="medium"><a name="installer">Installer</a></span><br><br>
+  The last part of the setup is running the install process. Access the folder your forum is located through your browser, for
+  example, we're going to "http://www.ilovemb.com/forum/".Select 'New Installation' and click continue. Fill in the following
+  fields with the correct information. If you aren't sure what they are, contact your server administrator or web host to give
+  you this information. Click continue. <b>It is strongly recommended that you leave the 'Table Prefix' as it is unless you
+  know what it does, and/or because you are installing more than one instance of MercuryBoard on one database.</b>
+  <br><br>
+  <img src="6.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  Now you will setup the Administrator account. This is a username and password that you cannot forget, otherwise, you'll lose
+  the ability to use administrative functions. Also, use a valid email address. This information is stored in your database
+  and is not sent anywhere else.
+  <br><br>
+  This is the last step, and it is <i>crucial</i>: Go back to SmartFTP and delete the 'install' directory. An easy way to do
+  this is to right-click the directory and select 'Delete'. Confirm the prompt, and you're done. Have fun with MercuryBoard,
+  and if you have any problems with this process, post in our <a href="http://forums.mercuryboard.com/index.php?a=forum&amp;f=6">support forum</a>.
+  <br><br>
+  <hr>
+  <br>
+
+<!-- Upgrading Section -->
+
+  <br>
+  <span class="medium"><a name="upgrading">Upgrading</a></span><br><br>
+  Upgrading is done in the same way as installing, you simply need to drop the new version's directory on top of your old version's. 
+  <b>It is recommended you keep old settings.php. Do not overwrite it as you do with other files.</b>
+  <br/><br/>
+  Before upgrading, make a note of your current MercuryBoard installation version: you will need it to correctly
+  upgrade.
+  <br/><br/>
+  Now go into the install folder through your browser, this should of been replaced when you dropped the new version's folder onto your 
+  server. You should now see the familiar install screen, now select the "upgrade" radio button rather than "new install".
+  <br/><br/>
+  <img src="install_main.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  After clicking next a list of versions should appear, now select the version which you are upgrading from.
+  <br/><br/>
+  <img src="upgrade_main.png" alt="MercuryBoard Installation Help">
+  <br><br>
+  <br/><br/>
+  The upgrade will not overwrite any database information apart from the templates table and the setttings table. All your data within the
+  database is safe and will not be touched by the MercuryBoard upgrade. Do not install a backup of MercuryBoard which is older than your current
+  working version, especially after upgrading, it will not overwrite skins either.
+  <br/><br/>
+  Please note on upgrading the upgrade script will set the skin to default(Candy Corn) for all administrators. This is so you can still login and 
+  access Admin CP. Many templates have been added so any skins for Mercuryboard 1.1.4 or older will need significant changes.
+  See http://mercuryboard.com for more information
+</td>
+		<td style='background-color:#fcfcfc; border:1px solid #cccccc; line-height:135%; padding:7px' width='25%' valign='top'>
+			<b>Need help with using the Admin CP?</b><br />
+			Now you can use the Admin CP help documentation containing all the basics that you
+			will need to know, to access this documentation go into your Admin CP and click 
+			<a href="admin_help.html" target="_blank">Admin CP Help</a> on the grey bar top right.<br/>
+			<br/>
+
+			<b>Still having a problem?</b><br />
+			If you have tried looking at the readme and the FAQ but you are still having problems,
+			try going to the official MercuryBoard support forum by clicking the <a href="http://forums.mercuryboard.com/index.php?a=forum&amp;f=6" target="_blank">
+			support</a> link at the top of this page.<br/>
+			<br/>
+
+			<b>Looking for a host?</b><br />
+			In order to use MercuryBoard you need to have a host, this is basically a server which is connected
+			to the World Wide Web so you can upload web pages to the internet. If you don't have a host then take a look <a href="http://forums.mercuryboard.com/index.php?a=topic&amp;t=3529" target="_blank">here</a>
+			for a list of ones that are <i>free</i><br/><br/> 
+			
+			<b>Release Notes</b><br>
+			In every release of MercuryBoard there is a compiled list of new features, bug fixes, template changes etc.
+			These notes are made by the developers and can be found <a href="release.html" target="_blank">here</a><br/><br/> 
+
+			<b>Open Source</b><br />
+			&bull; Easy to customize<br />
+			&bull; Released under<br />
+
+			<span style='color:#fcfcfc'>&bull;</span> the GPL license<br />
+			&bull; Free for commercial<br />
+			<span style='color:#fcfcfc'>&bull;</span> or personal use<br /><br />
+
+			<a href='http://www.mysql.com' target='_blank'><img src='mysql.png' alt='MySQL' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br/>
+			<a href='http://www.php.net' target='_blank'><img src='php.gif' alt='PHP' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br /><br />
+			<a href='http://www.mercuryboard.com/index.php?a=donate' target="_blank"><img src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" alt="Make payments with PayPal - it's fast, free and secure!"></a><br/><br/><br/>
+			
+			<a href="http://validator.w3.org/check?uri=referer"><img style="border:0; margin-top:5px" src="valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><br />
+			<a href="http://jigsaw.w3.org/css-validator/"><img style="border:0; width:88px; height:31px; margin-top:5px" src="valid-css.png" alt="Valid CSS!"></a>
+		</td>
+	</tr>
+</table>
+
+<!-- End Content  -->
+
+</body>
+</html>

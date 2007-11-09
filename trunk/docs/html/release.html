@@ -1,0 +1,252 @@
+<!-- $Id: release.html,v 1.5 2007/08/08 19:24:30 jon Exp $-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>MercuryBoard Help :: Release Notes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type='text/css'>
+body    {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; cursor:default; margin:0px; padding:0px; background-color:#ffffff; background-image:url(bg.gif)}
+td      {font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000; line-height:115%}
+
+a       {color:#000000}
+a:hover {color:#ff6600}
+
+td.menu {color:#ffffff; font-weight:bold; font-size:14px; background-color:#ff9933}
+a.menu  {color:#000000; text-decoration:none; font-weight:bold; font-size:11px}
+a.menu:hover {color:#ffffff}
+
+hr      {height:1px; border:0px; border-top:1px dashed #999999}
+li      {line-height:130%; list-style-type: none;}
+ul		{margin:0;}
+
+.large  {font-size:18px; font-weight:bold; display:block; width:95%; background-color:#eeeeee; border:1px dashed #999999; padding:5px}
+.medium {font-size:14px; font-weight:bold}
+.small  {font-size:10px}
+
+.justify {text-align:justify}
+</style>
+
+<script type='text/javascript'>
+<!--
+function arrow(x, y)
+{
+	if (document.getElementById) {
+		document.getElementById(x).style.visibility = y;
+	} else {
+		document.all[x].style.visibility = y;
+	}
+}
+//-->
+</script>
+</head>
+<body>
+<br/>
+<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' align='center' width='75%'>
+	<tr>
+		<td colspan='2' style='border:1px solid #cccccc; border-bottom:3px solid #cccccc'>
+			<table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse' width='100%'>
+				<tr>
+					<td class='menu' style='padding:5px' width='100%'><a href='/'><img src='logo.gif' alt='MercuryBoard' border='0'></a></td>
+
+					<td class='menu' align='right'><div id='about' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='about.html' class='menu' onmouseover='arrow("about", "visible")' onmouseout='arrow("about", "hidden")'>about</a></td>
+
+					<td class='menu' align='right'><div id='install' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='install.html' class='menu' onmouseover='arrow("install", "visible")' onmouseout='arrow("install", "hidden")'>installation</a></td>
+
+					<td class='menu' align='right'><div id='faq' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='faq.html' class='menu' onmouseover='arrow("faq", "visible")' onmouseout='arrow("faq", "hidden")'>FAQ</a></td>
+
+					<td class='menu' align='right'><div id='community' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com' target="_blank" class='menu' onmouseover='arrow("community", "visible")' onmouseout='arrow("community", "hidden")'>community</a></td>
+
+					<td class='menu' align='right'><div id='support' style='visibility:hidden'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='http://forums.mercuryboard.com/index.php?a=forum&amp;f=6' target="_blank" class='menu' onmouseover='arrow("support", "visible")' onmouseout='arrow("support", "hidden")'>support</a></td>
+
+					<td class='menu' align='right'><div id='credits' style='visibility:visible'>&rsaquo;</div></td>
+					<td class='menu' style='padding-right:15px'><a href='credits.html' class='menu' onmouseover='arrow("credits", "visible")' onmouseout='arrow("credits", "visible")'>credits</a></td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign='top' style='border:1px solid #cccccc; padding:10px' bgcolor='#ffffff'>
+
+<span class='large'>Release Notes</span><br /><br />
+
+<span class='medium'>1.1.6</span><br /><br />
+
+<b>Improvements</b>
+<ul>
+	<li>Now running the latest stable release of JPGraph
+	<li>Terms & Conditions Feature
+	<li>Installer detects if Gzip is enabled or disabled
+	<li>Admin CP displays warning message if user tries to enable gzip when it is disabled on the server
+	<li>HTML help documents added
+	<li>New permission to disable post counting in selected forums
+	<li>New permission to see hidden members using the board
+	<li>Database password is no longer held in a standard text box, it is now in a password formatted text box in installer
+	<li>Admin stats produces a clean MercuryBoard error if there is a missing component
+	<li>Admin CP now asks for admin password for security
+	<li>New Feature Topic Rating
+	<li>New Feature Mark PM as unread
+	<li>CP now requires changed password >= 5 characters long, same as registration
+	<li>Removed the ability of banning or stopping Guests, or the Guest Group, from using MercuryBoard in the Admin CP
+</ul><br/>
+
+<b>Bug Fixes</b>
+<ul>
+	<li>Fixed Bug #4031 - Size tag could generate hudge text destroying layout
+	<li>Fixed Bug #4044 - could not view buddy list when page > 1
+	<li>Fixed Bug #4048 - Adding yourself to your own buddy list
+	<li>Fixed Bug #4071 - post count does not comma seperate, when searching
+	<li>Fixed Bug #3518 - output_buffering - cannot be disabled
+	<li>Fixed Bug #4107 - Pagination on New Posts
+	<li>Fixed Bug #4115 - PM preview error when already in preview mode
+	<li>Fixed Bug #4160 - Subscriptions still active even when a member is banned
+	<li>Fixed Bug #4129 - jpgraph error in CVS
+	<li>Fixed Bug #4181 - undefined variable $_SERVER['QUERY_STRING'] when running IIS
+	<li>Fixed Bug #2449 - Daylight Savings broken
+	<li>Fixed Bug #4189 - Admins caught in anti-troll, permissions on fresh install
+	<li>Fixed Bug #4227 - Topic starters can rate their own topics
+	<li>Fixed Bug #2519 - Subscriptions still active if moved into a private forum
+	<li>Fixed Bug #4233 - Removing all member titles causes everyone to logout, as well as post problems
+	<li>Fixed Bug #4245 - gzip compression will fail in certain PHP configurations
+</ul><br/>
+
+<b>Changed Templates</b>
+<ul>
+	<li>MAIN_COPYRIGHT
+	<li>REGISTER_MAIN
+	<li>FORUM_TOPIC
+	<li>TOPIC_MAIN
+	<li>PM_FOLDER_MESSAGE
+	<li>FORUM_MAIN
+	<li>NEW_POSTS_CONTENT
+</ul>
+
+<br /><hr /><br />
+
+<span class='medium'>1.1.5</span><br /><br />
+
+<b>Improvements</b>
+<ul>
+	<li>Attempt to CHMOD wherever necessary
+	<li>Enhanced PHP 5 Support
+	<li>Enhanced MySQL 5 Support
+	<li>Admin CP now has its own style sheet
+	<li>Moderator group added with fresh install
+	<li>PM Preview
+	<li>New Posts since last visited feature
+	<li>Buddy list
+	<li>Admin CP help document added
+</ul><br/>
+
+<b>Bug Fixes</b>
+<ul>
+	<li>Fixed bug #2784 - Edit Connection Settings broken
+	<li>Fixed bug #2725 - Fresh board install shows 5 members registered
+	<li>Fixed bug #2815 - Posts disappear when there are no member titles
+	<li>Fixed bug #2780 - Member titles don't update for existing members
+	<li>Fixed bug #2868 - MB generated errors not displaying
+	<li>Fixed bug #2867 - Post Edit on page > 1 Does not redirect properly
+	<li>Fixed bug #2729 - Lost topics when deleting a user
+	<li>Fixed bug #2749 - Most users bug
+	<li>Fixed bug #2880 - Active Users links to private forums
+	<li>Fixed bug #2910 - If default skin directory is deleted, membertitles and emoticons can't be edited
+	<li>Fixed bug #2846 - Sorting in forums and memberlist doesn't carry to next page
+	<li>Fixed bug #2909 - Inconsistent template usage for member level images
+	<li>Fixed bug #2783 - Mbcode Php Colour Leaking
+	<li>Fixed bug #2877 - Messenger Sentbox
+	<li>Fixed bug #2906 - After upgrade, changing custom skin to default kills board
+	<li>Fixed bug #3013 - $botformat should not be inline styled
+	<li>Fixed bug #3309 - Edit or delete automatic member titles, not updating
+	<li>Fixed bug #3010 - Guest must have a level greater than 0 to view the board
+	<li>Fixed bug #3060 - Unable to register new members
+	<li>Fixed bug #3742 - PHP 5 error when running stats, admin cp
+	<li>Fixed bug #3687 - Serious Security Issue Found when using activation emails
+	<li>Fixed bug #1275 - Avatar uploading in safe mode
+	<li>Fixed bug #3797 - PHP 5 explode() problem in attachments function
+	<li>Fixed bug #2799 - Attachments bug
+	<li>Fixed bug #3396 - PHP 5.0.5 - variable passed by reference error in birthday code
+	<li>Fixed bug #1210 - Navigation tree for moved subforums does not reflect move
+	<li>Fixed bug #3166 - Time logged in impacts everybody's ability to login, Only under IE
+	<li>Fixed bug #3172 - [font] &amp; [color] tag exploit
+	<li>Fixed bug #3421 - Mercuryboard does not work in MySQL 5.0.12 or higher
+	<li>Fixed bug #3418 - multiple 'active' entries
+	<li>Fixed bug #3053 - bruteforce exploit available to public!
+	<li>Fixed bug #2991 - HTML comments crash XHTML layout - now can be enabled and disabled in the admin cp
+	<li>Fixed bug #3420 - MbCode buttons malfunctioning 
+</ul><br>
+
+<b>Changed Templates</b>
+<ul>
+	<li>PM_FOLDER
+	<li>POST_POSTER_MEMBER
+	<li>PM_SEND
+	<li>MAIN_HEADER_MEMBER
+	<li>POST_BOX_PLAIN
+	<li>PM_VIEW 
+</ul><br>
+
+<b>New Templates</b>
+<ul>
+	<li>PM_PREVIEW
+	<li>NEW_POSTS
+	<li>NEW_POSTS_CONTENT
+	<li>NO_NEW_POSTS
+	<li>PM_VIEW_BUDDIES
+	<li>PM_BUDDY_ROW
+	<li>PM_NO_BUDDY_ROW 
+</ul><br>
+
+<b>Language Updates</b>
+<ul>
+	<li>Italian
+	<li>Swedish
+	<li>German
+</ul>
+</td>
+<td style='background-color:#fcfcfc; border:1px solid #cccccc; line-height:135%; padding:7px' width='25%' valign='top'>
+			<b>Need help with using the Admin CP?</b><br />
+			Now you can use the Admin CP help documentation containing all the basics that you
+			will need to know, to access this documentation go into your Admin CP and click 
+			<a href="admin_help.html" target="_blank">Admin CP Help</a> on the grey bar top right.<br/>
+			<br/>
+
+			<b>Still having a problem?</b><br />
+			If you have tried looking at the readme and the FAQ but you are still having problems,
+			try going to the official MercuryBoard support forum by clicking the <a href="http://forums.mercuryboard.com/index.php?a=forum&amp;f=6" target="_blank">
+			support</a> link at the top of this page.<br/>
+			<br/>
+
+			<b>Looking for a host?</b><br />
+			In order to use MercuryBoard you need to have a host, this is basically a server which is connected
+			to the World Wide Web so you can upload web pages to the internet. If you don't have a host then take a look <a href="http://forums.mercuryboard.com/index.php?a=topic&amp;t=3529" target="_blank">here</a>
+			for a list of ones that are <i>free</i><br/><br/> 
+			
+			<b>Release Notes</b><br>
+			In every release of MercuryBoard there is a compiled list of new features, bug fixes, template changes etc.
+			These notes are made by the developers and can be found <a href="release.html" target="_blank">here</a><br/><br/> 
+
+			<b>Open Source</b><br />
+			&bull; Easy to customize<br />
+			&bull; Released under<br />
+
+			<span style='color:#fcfcfc'>&bull;</span> the GPL license<br />
+			&bull; Free for commercial<br />
+			<span style='color:#fcfcfc'>&bull;</span> or personal use<br /><br />
+
+			<a href='http://www.mysql.com' target='_blank'><img src='mysql.png' alt='MySQL' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br/>
+			<a href='http://www.php.net' target='_blank'><img src='php.gif' alt='PHP' border='0' style='border:1px solid #cccccc; margin-top:5px'></a><br /><br/>
+			<a href='http://www.mercuryboard.com/index.php?a=donate' target="_blank"><img src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" alt="Make payments with PayPal - it's fast, free and secure!"></a><br/><br/><br/>
+			
+			<a href="http://validator.w3.org/check?uri=referer"><img style="border:0; margin-top:5px" src="valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a><br />
+			<a href="http://jigsaw.w3.org/css-validator/"><img style="border:0; width:88px; height:31px; margin-top:5px" src="valid-css.png" alt="Valid CSS!"></a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
